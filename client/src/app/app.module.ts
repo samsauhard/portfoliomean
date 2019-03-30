@@ -26,6 +26,7 @@ import { JwtModule, JwtHelperService, JwtInterceptor } from '@auth0/angular-jwt'
 
 import { RegisterComponent } from './pages/register/register.component';
 import { LoginComponent } from './pages/login/login.component';
+import { AuthGuard } from './guards/auth.guard';
 
 
 
@@ -64,7 +65,7 @@ export function jwtTokenGetter() {
     }
   })
 ],
-providers: [FlashMessagesService],
+providers: [FlashMessagesService,AuthGuard],
 bootstrap: [AppComponent]
 })
 export class AppModule { }
