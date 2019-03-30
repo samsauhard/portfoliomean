@@ -95,7 +95,7 @@ passport.use(strategy);
 
 
 app.use('/api', indexRouter);
-app.use('/api/contact-list', contactRouter); // TODO - Protect this section
+app.use('/api/contact-list', passport.authenticate('jwt', {session: false}), contactRouter); // TODO - Protect this section
 app.get('*', (req, res) => {
   res.sendfile(path.join(__dirname, '../../public/index.html'));
 });
