@@ -20,9 +20,9 @@ const routes: Routes = [
   {path: 'project', component: ProjectComponent, data: {title: 'Project'}},
   {path: 'documents', component: DocumentsComponent, data: {title: 'Documents'}},
   {path: 'services', component: ServicesComponent, data: {title: 'Services'}},
-  {path: 'contact', component: ContactComponent, data: {title: 'Contact'},canActivate: [AuthGuard]},
+  {path: 'contact', component: ContactComponent, data: {title: 'Contact'}, canActivate: [AuthGuard]}, 
 
-  {path: 'contact/contact-list', component: ContactListComponent, data: {title: 'Contact List'},canActivate: [AuthGuard]},
+  {path: 'contact/contact-list', component: ContactListComponent, data: {title: 'Contact List'}, canActivate: [AuthGuard]},
   {path: 'contact/contact-list/add', component: ContactDetailsComponent, data: {title: 'Add Contact'},canActivate: [AuthGuard]},
   {path: 'contact/contact-list/edit/:id', component: ContactDetailsComponent, data: {title: 'Edit Contact'},canActivate: [AuthGuard]},
   {path: 'contact/contact-list/delete/:id', component: ContactDeleteComponent, data: {title: 'Add Contact'},canActivate: [AuthGuard]},
