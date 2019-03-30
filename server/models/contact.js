@@ -5,10 +5,11 @@ let contactSchema = mongoose.Schema({
     firstName: String,
     lastName: String,
     email: String,
-    message: String
+    message: String,
+    age: Number
 },
 {
-    collection: "first"
+    collection: "contactdata"
 });
 
 module.exports = mongoose.model('contact', contactSchema);
