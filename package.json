@@ -36,9 +36,9 @@
     "passport-local-mongoose": "^5.0.1",
     "popper.js": "^1.14.6"
   },
-  "description": "Mongo and Mongoose Demo",
+  "description": "Portfolio",
   "main": "server.js",
-  "author": "Tom Tsiliopoulos",
+  "author": "SAUHARD",
   "license": "ISC",
   "devDependencies": {
     "@types/body-parser": "^1.17.0",
